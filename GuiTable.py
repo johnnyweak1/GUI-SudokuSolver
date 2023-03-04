@@ -80,4 +80,4 @@ class GuiTable(Table):
         for row in range(self.sudoku_table.get_row_num()):
             for col in range(self.sudoku_table.get_col_num()):
                 if self.sudoku_table.table[row][col] == 'Error':
-                    self.sudoku_table.leave_only_errors()
+                    self.sudoku_table.check_values()
