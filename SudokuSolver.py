@@ -27,7 +27,7 @@ class SudokuSolver:
 
     def show_result(self):
         self.gui_table.get_values_from_entries()
-        self.gui_table.check_errors()
+        self.gui_table.leave_only_errors()
         self.gui_table.hide_entries()
         self.gui_table.solve()
         self.gui_table.show_sudoku_table()

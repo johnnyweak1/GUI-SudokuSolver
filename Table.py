@@ -10,3 +10,7 @@ class Table(ABC):
     @abstractmethod
     def solve(self):
         pass
+
+    @abstractmethod
+    def check_values(self):
+        pass

@@ -44,7 +44,7 @@ class SudokuTable(Table):
     def reset_values(self):
         self.table = [[0 for _ in range(9)] for _ in range(9)]
 
-    def leave_only_errors(self):
+    def check_values(self):
         for row in range(len(self.table)):
             for col in range(len(self.table[0])):
                 if self.table[row][col] != 'Error':

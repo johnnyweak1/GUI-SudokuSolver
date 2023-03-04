@@ -76,7 +76,7 @@ class GuiTable(Table):
     def reset(self):
         self.sudoku_table.reset_values()
 
-    def check_errors(self):
+    def check_values(self):
         for row in range(self.sudoku_table.get_row_num()):
             for col in range(self.sudoku_table.get_col_num()):
                 if self.sudoku_table.table[row][col] == 'Error':
